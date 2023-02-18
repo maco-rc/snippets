@@ -40,3 +40,7 @@ This is a repository to storage my code wars solved problems, mostly using Rust 
 ######
 16. [Happy Number](https://github.com/maco-rc/snippets/tree/main/happy_number) | [LeetCode](https://leetcode.com/problems/happy-number) | [C#](https://dotnet.microsoft.com/en-us/)
 ######
+17. [Playing Banjo](https://github.com/maco-rc/snippets/tree/main/playing_banjo) | [Kata](https://www.codewars.com/kata/53af2b8861023f1d88000832/train/csharp) | [C#](https://dotnet.microsoft.com/en-us/)
+######
+18. [List Filtering](https://github.com/maco-rc/snippets/tree/main/list_filtering) | [Kata](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/csharp) | [C#](https://dotnet.microsoft.com/en-us/)
+######
