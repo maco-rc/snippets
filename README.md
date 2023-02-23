@@ -44,3 +44,6 @@ This is a repository to storage my code wars solved problems, mostly using Rust 
 ######
 18. [List Filtering](https://github.com/maco-rc/snippets/tree/main/list_filtering) | [Kata](https://www.codewars.com/kata/53dbd5315a3c69eed20002dd/train/csharp) | [C#](https://dotnet.microsoft.com/en-us/)
 ######
+19. [Moving Zeros To The End](https://github.com/maco-rc/snippets/tree/main/moving_zeros) | [Kata](https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/rust) | [Rust](https://www.rust-lang.org/)
+######
+20. 
