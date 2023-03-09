@@ -46,4 +46,4 @@ This is a repository to storage my code wars solved problems, mostly using Rust 
 ######
 19. [Moving Zeros To The End](https://github.com/maco-rc/snippets/tree/main/moving_zeros) | [Kata](https://www.codewars.com/kata/52597aa56021e91c93000cb0/train/rust) | [Rust](https://www.rust-lang.org/)
 ######
-20. 
+20. [A Man and his Umbrellas](https://github.com/maco-rc/snippets/tree/main/a_man_and_his_umbrellas) | [Kata](https://www.codewars.com/kata/58298e19c983caf4ba000c8d/train/rust) | [Rust](https://www.rust-lang.org/)
