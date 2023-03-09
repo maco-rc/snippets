@@ -5,9 +5,9 @@ rename() {
 }
 
 create_proj_dotnet() {
-    dotnet new sln -o $1
+    dotnet new sln -o "$1"
 
-    cd $1
+    cd "$1" || return
 
     dotnet new classlib -o Solution
 
@@ -28,19 +28,19 @@ create_proj_dotnet() {
 
 create_proj_rust() {
     case $2 in
-    true) cargo new --lib $1 ;;
-    false) cargo new --bin $1 ;;
+    true) cargo new --lib "$1"; cd "$folder/src" || exit; touch 'solution.rs' ;;
+    false) cargo new --bin "$1" ;;
     esac
 
 }
 
 main() {
     if [[ $2 -eq 1 ]]; then
-        create_proj_rust $folder $teste
+        create_proj_rust "$folder" $teste
     fi
 
     if [[ $2 -eq 2 ]]; then
-        create_proj_dotnet $folder $teste
+        create_proj_dotnet "$folder" $teste
     fi
 }
 
@@ -51,18 +51,19 @@ while getopts rdtf: flag; do
     d) lang=2 ;;
     t) teste=true ;;
     f) folder=${OPTARG} ;;
+    *) echo 'not a flag silly' ;;
     esac
 done
 
-if [ -d $folder ]; then
-    read -p "Project folder already exist, wanna remade it? (y/n) " opt
+if [ -d "$folder" ]; then
+    read -r -p "Project folder already exist, wanna remade it? (y/n) " opt
 
     if [[ "$opt" == "y" ]]; then
-        rm -rf $folder
+        rm -rf "$folder"
         main
     else
         exit 1
     fi
 fi
 
-main $folder $lang $teste
+main "$folder" "$lang" "$teste"
